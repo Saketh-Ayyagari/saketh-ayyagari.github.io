@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects — Saketh Ayyagari</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav id="navbar">
+  <a href="index.html" class="nav-logo" style="text-decoration:none;">Saketh Ayyagari</a>
+  <ul class="nav-links">
+    <li><a href="index.html#about" class="nav-link">About</a></li>
+    <li><a href="index.html#experience" class="nav-link">Experience</a></li>
+    <li><a href="projects.html" class="nav-link active">Projects</a></li>
+    <li><a href="index.html#education" class="nav-link">Education</a></li>
+    <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+  </ul>
+</nav>
+
+<main>
+  <div class="projects-page-header">
+    <a href="index.html" class="back-link">
+      <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+      Back to home
+    </a>
+    <h1>Projects</h1>
+    <p>A collection of things I've built — from robotics and ML research to fast hackathon experiments.</p>
+  </div>
+
+  <div class="section" style="max-width:900px;margin:0 auto;padding:0 clamp(1.5rem,5vw,2rem) 6rem;opacity:1;transform:none;">
+
+    <!-- <div class="tab-bar">
+      <button class="tab-btn active" data-tab="technical">&#9881;&#65039; &nbsp;Technical</button>
+      <button class="tab-btn" data-tab="hackathon">&#9889; &nbsp;Hackathon</button>
+    </div> -->
+
+    <!-- TECHNICAL PROJECTS -->
+    <div class="tab-panel active" id="tab-technical">
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-icon">🗺️</div>
+          <div class="project-title">SLAM System</div>
+          <p class="project-desc">Implemented a Simultaneous Localization and Mapping system using the slam-toolbox ROS2 package on both simulation and a physical differential drive robot. Integrated encoders, IMU, and 2D LiDAR sensors.</p>
+          <div class="project-tags">
+            <span class="project-tag">ROS2</span>
+            <span class="project-tag">Python</span>
+            <span class="project-tag">C++</span>
+            <span class="project-tag">Ubuntu</span>
+          </div>
+          <div class="project-links">
+            <a href="#"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg> GitHub</a>
+            <a href="#"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M6.002 1.61 0 12.004 6.002 22.39h11.996L24 12.004 17.998 1.61zm1.593 4.084h3.947c3.605 0 6.276 1.695 6.276 6.31 0 4.436-2.754 6.396-6.276 6.396H7.595zm2.517 2.449v7.686h1.43c2.106 0 3.610-1.12 3.610-3.943 0-2.745-1.504-3.743-3.61-3.743z"/></svg> Devpost</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-icon">🧠</div>
+          <div class="project-title">Predicting Movement Direction with ML</div>
+          <p class="project-desc">Trained SVMs, Random Forests, and Neural Networks on neural spike data to predict the direction of a mammal's movement. Studied motor neurons' role in mammalian movement and drafted a research paper on methodology and results.</p>
+          <div class="project-tags">
+            <span class="project-tag">TensorFlow</span>
+            <span class="project-tag">scikit-learn</span>
+            <span class="project-tag">Python</span>
+          </div>
+          <div class="project-links">
+            <a href="#"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg> GitHub</a>
+            <a href="#"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M6.002 1.61 0 12.004 6.002 22.39h11.996L24 12.004 17.998 1.61zm1.593 4.084h3.947c3.605 0 6.276 1.695 6.276 6.31 0 4.436-2.754 6.396-6.276 6.396H7.595zm2.517 2.449v7.686h1.43c2.106 0 3.610-1.12 3.610-3.943 0-2.745-1.504-3.743-3.61-3.743z"/></svg> Devpost</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-icon">🫁</div>
+          <div class="project-title">Neural Network for Pneumonia Detection</div>
+          <p class="project-desc">Built convolutional neural networks to detect pneumonia with 83% peak accuracy. Applied transfer learning and data augmentation to improve performance, then deployed the model as a Python web app using Streamlit.</p>
+          <div class="project-tags">
+            <span class="project-tag">TensorFlow</span>
+            <span class="project-tag">Python</span>
+            <span class="project-tag">Streamlit</span>
+          </div>
+          <div class="project-links">
+            <a href="#"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg> GitHub</a>
+            <a href="#"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg> Live Demo</a>
+            <a href="#"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M6.002 1.61 0 12.004 6.002 22.39h11.996L24 12.004 17.998 1.61zm1.593 4.084h3.947c3.605 0 6.276 1.695 6.276 6.31 0 4.436-2.754 6.396-6.276 6.396H7.595zm2.517 2.449v7.686h1.43c2.106 0 3.610-1.12 3.610-3.943 0-2.745-1.504-3.743-3.61-3.743z"/></svg> Devpost</a>
+          </div>
+        </div>
+
+        <!-- HACKATHON PROJECTS -->
+        <!-- <div class="project-card">
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:0.5rem;flex-wrap:wrap;margin-bottom:0.25rem;">
+            <div class="project-icon">&#127942;</div>
+            <span class="hackathon-badge">&#127885; 1st Place</span>
+          </div>
+          <div class="project-title">HackProject One</div>
+          <div class="project-award">HackathonName 2024 &nbsp;&middot;&nbsp; Best Overall</div>
+          <p class="project-desc" style="margin-top:0.5rem;">Built in 24 hours — describe the problem you tackled, what you built, and what made it stand out to the judges.</p>
+          <div class="project-tags">
+            <span class="project-tag">React</span>
+            <span class="project-tag">OpenAI API</span>
+            <span class="project-tag">Firebase</span>
+          </div>
+          <div class="project-links">
+            <a href="#"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg> GitHub</a>
+            <a href="#"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg> Devpost</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:0.5rem;flex-wrap:wrap;margin-bottom:0.25rem;">
+            <div class="project-icon">&#9889;</div>
+            <span class="hackathon-badge">&#129352; 2nd Place</span>
+          </div>
+          <div class="project-title">HackProject Two</div>
+          <div class="project-award">HackathonName 2023 &nbsp;&middot;&nbsp; Best Use of AI</div>
+          <p class="project-desc" style="margin-top:0.5rem;">Describe the concept, what you built over the weekend, and any interesting constraints or pivots you made under time pressure.</p>
+          <div class="project-tags">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">Flask</span>
+            <span class="project-tag">Twilio</span>
+          </div>
+          <div class="project-links">
+            <a href="#"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg> GitHub</a>
+            <a href="#"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg> Devpost</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:0.5rem;flex-wrap:wrap;margin-bottom:0.25rem;">
+            <div class="project-icon">&#127760;</div>
+          </div>
+          <div class="project-title">HackProject Three</div>
+          <div class="project-award">HackathonName 2022</div>
+          <p class="project-desc" style="margin-top:0.5rem;">Not every hackathon project wins, but they all teach you something. Share what you built, what you learned, and what you'd do differently.</p>
+          <div class="project-tags">
+            <span class="project-tag">Vue.js</span>
+            <span class="project-tag">Supabase</span>
+            <span class="project-tag">Mapbox</span>
+          </div>
+          <div class="project-links">
+            <a href="#"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg> GitHub</a>
+          </div>
+        </div> -->
+
+      </div>
+    </div>
+
+    <!-- HACKATHON PROJECTS -->
+    <div class="tab-panel" id="tab-hackathon">
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:0.5rem;flex-wrap:wrap;margin-bottom:0.25rem;">
+            <div class="project-icon">&#127942;</div>
+            <span class="hackathon-badge">&#127885; 1st Place</span>
+          </div>
+          <div class="project-title">HackProject One</div>
+          <div class="project-award">HackathonName 2024 &nbsp;&middot;&nbsp; Best Overall</div>
+          <p class="project-desc" style="margin-top:0.5rem;">Built in 24 hours — describe the problem you tackled, what you built, and what made it stand out to the judges.</p>
+          <div class="project-tags">
+            <span class="project-tag">React</span>
+            <span class="project-tag">OpenAI API</span>
+            <span class="project-tag">Firebase</span>
+          </div>
+          <div class="project-links">
+            <a href="#"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg> GitHub</a>
+            <a href="#"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg> Devpost</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:0.5rem;flex-wrap:wrap;margin-bottom:0.25rem;">
+            <div class="project-icon">&#9889;</div>
+            <span class="hackathon-badge">&#129352; 2nd Place</span>
+          </div>
+          <div class="project-title">HackProject Two</div>
+          <div class="project-award">HackathonName 2023 &nbsp;&middot;&nbsp; Best Use of AI</div>
+          <p class="project-desc" style="margin-top:0.5rem;">Describe the concept, what you built over the weekend, and any interesting constraints or pivots you made under time pressure.</p>
+          <div class="project-tags">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">Flask</span>
+            <span class="project-tag">Twilio</span>
+          </div>
+          <div class="project-links">
+            <a href="#"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg> GitHub</a>
+            <a href="#"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg> Devpost</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:0.5rem;flex-wrap:wrap;margin-bottom:0.25rem;">
+            <div class="project-icon">&#127760;</div>
+          </div>
+          <div class="project-title">HackProject Three</div>
+          <div class="project-award">HackathonName 2022</div>
+          <p class="project-desc" style="margin-top:0.5rem;">Not every hackathon project wins, but they all teach you something. Share what you built, what you learned, and what you'd do differently.</p>
+          <div class="project-tags">
+            <span class="project-tag">Vue.js</span>
+            <span class="project-tag">Supabase</span>
+            <span class="project-tag">Mapbox</span>
+          </div>
+          <div class="project-links">
+            <a href="#"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg> GitHub</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  <p>Designed &amp; built by <strong>Saketh Ayyagari</strong> &middot; 2025</p>
+</footer>
+
+<script>
+  const tabBtns = document.querySelectorAll('.tab-btn');
+  const tabPanels = document.querySelectorAll('.tab-panel');
+  tabBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      tabBtns.forEach(b => b.classList.remove('active'));
+      tabPanels.forEach(p => p.classList.remove('active'));
+      btn.classList.add('active');
+      document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
+    });
+  });
+</script>
+
+</body>
+</html>
