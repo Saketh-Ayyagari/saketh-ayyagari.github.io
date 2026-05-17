@@ -226,6 +226,8 @@ main {
 
 .about-card.wide { grid-column: 1 / -1; }
 
+.about-grid > .about-card:nth-child(2) { grid-column: 1 / -1; }
+
 .about-card h3 {
   font-size: 0.75rem;
   font-weight: 500;
